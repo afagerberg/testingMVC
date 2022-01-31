@@ -1,0 +1,31 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+
+body {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+a { text-decoration: none;}
+
+h1{ font-size:1.2em;}
+
+h2{ font-size:1.6em;}
+header {padding:10px;}
+.container {margin-top:50px;}
+main {
+    max-width:600px;
+    margin:0 auto;
+    padding:10px;
+}
+nav ul {list-style:none; display:flex; gap:15px;}
+
+input{ display:block;}
+
+input[type=submit]{
+    background-color:white;
+    padding:8px;
+    border:1px solid grey;
+}
+
+form span {
+    color:red;
+    padding-bottom:10px;
+}

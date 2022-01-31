@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8XkNwhUqyZQi4k38T7umtS2y5hMHVgHo5xjxLQ6XQYHTf2TgD+tnrYJqKlay00+6TFpcRm3oU019s5jFbFZLpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\MVC123.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alice\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

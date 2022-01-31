@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "guzM1bSF5WZZrRS0d2EEK5+Un++TpoHg4JxIK0MBTKM=",
+  "Source": "MVC123",
+  "BasePath": "_content/MVC123",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MVC123\\wwwroot",
+      "Source": "MVC123",
+      "ContentRoot": "C:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\wwwroot\\",
+      "BasePath": "_content/MVC123",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\wwwroot\\css\\main.css",
+      "SourceId": "MVC123",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\wwwroot\\",
+      "BasePath": "_content/MVC123",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
+    }
+  ]
+}
