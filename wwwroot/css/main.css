@@ -15,7 +15,16 @@ main {
     margin:0 auto;
     padding:10px;
 }
-nav ul {list-style:none; display:flex; gap:15px;}
+ul {list-style:none;}
+nav ul { display:flex; gap:15px;}
+
+main ul li { 
+    padding:14px 16px 18px 16px;
+    border:2px solid rgb(226, 226, 226);
+    margin-bottom:10px;
+}
+
+li strong{display:block;}
 
 input{ display:block;}
 

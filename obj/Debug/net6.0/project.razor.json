@@ -16313,13 +16313,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\Views\\Home\\Courses.cshtml",
-      "TargetPath": "Views\\Home\\Courses.cshtml",
+      "FilePath": "c:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\Views\\Shared\\_HeadNav.cshtml",
+      "TargetPath": "Views\\Shared\\_HeadNav.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\alice\\Desktop\\web\\Webbutveckling med .NET\\moment 2\\test\\MVC123\\Views\\Home\\AddWorkout.cshtml",
+      "TargetPath": "Views\\Home\\AddWorkout.cshtml",
       "FileKind": "mvc"
     },
     {

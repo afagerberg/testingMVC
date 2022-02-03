@@ -1,0 +1,41 @@
+@model MVC123.Models.ScheduleModel
+
+@{
+    ViewData["Title"] = "Lägg till träningstillfälle";
+}
+
+<h2>Mina kurser</h2>
+
+<form method="post">
+    <label  asp-for="workoutName"></label>
+    <input type="text" asp-for="workoutName" />
+    <span asp-validation-for="workoutName"></span>
+    <br>
+    <label asp-for="description"></label>
+    <textarea asp-for="description"></textarea>
+    <span asp-validation-for="description"></span>
+    <br>
+    <label asp-for="dayOfWeek"></label>
+    <div id="weekbox">
+    <input type="radio" asp-for="dayOfWeek" value="Måndag" />
+    <input type="radio" asp-for="dayOfWeek" value="Tisdag" />
+    <input type="radio" asp-for="dayOfWeek" value="Onsdag" />
+    <input type="radio" asp-for="dayOfWeek" value="Torsdag" />
+    <input type="radio" asp-for="dayOfWeek" value="Fredag" />
+    <input type="radio" asp-for="dayOfWeek" value="Lördag" />
+    <input type="radio" asp-for="dayOfWeek" value="Söndag" />
+    </div>
+    <span asp-validation-for="dayOfWeek"></span>
+    <br>
+    <label asp-for="time"></label>
+    <input type="time" asp-for="time" />
+    <span asp-validation-for="time"></span>
+    <br>
+    <label asp-for="degreeDifficulty"></label>
+    <input type="number" asp-for="degreeDifficulty" />
+    <span asp-validation-for="degreeDifficulty"></span> 
+    <br>
+    <input type="submit" value="Lägg till kurs">
+    
+</form>
+<p>@ViewData["Message"]</p>

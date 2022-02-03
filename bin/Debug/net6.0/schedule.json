@@ -1,0 +1,9 @@
+[
+  {
+    "workoutName": "Squats",
+    "description": "blaha",
+    "dayOfWeek": "Måndag",
+    "time": "13:00",
+    "degreeDifficulty": 3
+  }
+]

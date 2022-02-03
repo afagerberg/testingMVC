@@ -8,17 +8,9 @@
     <title>@ViewData["Title"]</title>
 </head>
 <body>
-    <header>
-        <h1>Test MVC</h1>
-        <nav>
-            <ul>
-                <li><a asp-controller="Home" asp-action="Index">Hem</a></li>
-                <li><a asp-controller="Home" asp-action="About">Om</a></li>
-                <li><a asp-controller="Home" asp-action="Courses">Kurser</a></li>
-                
-            </ul>
-        </nav>
-    </header>
+    
+    @await Html.PartialAsync("_HeadNav")
+    
     <div class="container">
         <main>
             @RenderBody()

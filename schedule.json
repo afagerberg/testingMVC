@@ -1,0 +1,16 @@
+[
+  {
+    "workoutName": "Squats",
+    "description": "blaha",
+    "dayOfWeek": "Måndag",
+    "time": "13:00",
+    "degreeDifficulty": 3
+  },
+  {
+    "workoutName": "banan",
+    "description": "blaha",
+    "dayOfWeek": "Onsdag",
+    "time": "13:40",
+    "degreeDifficulty": 2
+  }
+]

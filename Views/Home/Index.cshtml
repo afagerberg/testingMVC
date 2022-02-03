@@ -1,5 +1,16 @@
+@model List<MVC123.Models.ScheduleModel>
 @{
     ViewData["Title"] = "Startsida";
 }
 
-<h2>start</h2>
+<h2>Kurser jag läst</h2>
+<p>@ViewBag.newcourse</p>
+<p>@ViewBag.text</p>
+<ul>
+    @if(Model != null){
+        @foreach(var workout in Model){
+            <li><strong>@workout.workoutName</strong>@workout.time</li>
+        }
+    }
+</ul>
+

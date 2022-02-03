@@ -24,4 +24,5 @@ C:\Users\alice\Desktop\web\Webbutveckling med .NET\moment 2\test\MVC123\obj\Debu
 C:\Users\alice\Desktop\web\Webbutveckling med .NET\moment 2\test\MVC123\obj\Debug\net6.0\MVC123.genruntimeconfig.cache
 C:\Users\alice\Desktop\web\Webbutveckling med .NET\moment 2\test\MVC123\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\alice\Desktop\web\Webbutveckling med .NET\moment 2\test\MVC123\obj\Debug\net6.0\MVC123.csproj.CopyComplete
-C:\Users\alice\Desktop\web\Webbutveckling med .NET\moment 2\test\MVC123\bin\Debug\net6.0\courses.json
+C:\Users\alice\Desktop\web\Webbutveckling med .NET\moment 2\test\MVC123\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\alice\Desktop\web\Webbutveckling med .NET\moment 2\test\MVC123\bin\Debug\net6.0\schedule.json
