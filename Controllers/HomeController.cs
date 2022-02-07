@@ -14,6 +14,14 @@ namespace MVC123.Controllers {
 
             string? s1 = HttpContext.Session.GetString("test1");
             string? add1 = HttpContext.Session.GetString("test2");
+
+            string? empty = "Ditt träningsschema är tomt - Passa på att lägg in några träningstillfällen";
+            if(JsonObj != null) {
+                if(JsonObj.Count == 0){
+                ViewBag.empty = empty;
+            }
+            }
+            
             if(add1 == null){
                 ViewBag.text = s1;
             }
@@ -32,7 +40,11 @@ namespace MVC123.Controllers {
 
         //Om
         public IActionResult About(){
-            return View();
+
+            var JsonStr = System.IO.File.ReadAllText("schedule.json");
+            var JsonObj = JsonConvert.DeserializeObject<List<ScheduleModel>>(JsonStr);
+
+            return View(JsonObj);
         }
 
         //Kurser

@@ -5,36 +5,157 @@ body {
 }
 a { text-decoration: none;}
 
-h1{ font-size:1.2em;}
+h1{ font-size:1.2em; display:inline-block;}
 
-h2{ font-size:1.6em;}
+h2{ font-size:1.6em; color: rgb(240, 122, 12);}
 header {padding:10px;}
-.container {margin-top:50px;}
+header p { display:inline-block;}
+
+nav ul { margin-top:10px;display:flex; gap:15px;}
+nav ul li a { 
+    display:block; 
+    padding:5px 8px 5px 8px; 
+    background-color:rgb(240, 122, 12);
+    border-radius:3px;
+    color:white;
+}
+.container {margin-top:20px;}
 main {
-    max-width:600px;
+    max-width:920px;
     margin:0 auto;
     padding:10px;
 }
-ul {list-style:none;}
-nav ul { display:flex; gap:15px;}
+.schedMessage {
+    font-size: 1.2em;
+    margin:10px 0 10px 0;
+    font-weight:bold;
+    color:rgb(162, 167, 196);
+}
+.schedule{
+    position: relative;
+    display:flex;
+    width:100%;
+    gap:15px;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap:wrap;
+    background-color:rgb(194, 197, 218);
+    padding:20px;
 
-main ul li { 
-    padding:14px 16px 18px 16px;
-    border:2px solid rgb(226, 226, 226);
+}
+.schedule h3 {
+    
+    color:white;
+}
+.scheduleday {
+    width:200px;
+    height:200px;
+    overflow:auto;
+    padding:5px;
+    background-color:rgb(44, 69, 150);
+}
+
+ul {list-style:none;}
+
+
+.schedule ul li { 
+    padding:5px;
+    border-bottom:1px solid rgb(95, 103, 179);
     margin-bottom:10px;
+    color: rgb(220, 227, 241);
 }
 
 li strong{display:block;}
+.about {
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+.countworkouts, .averageDifficulty {
+    padding:10px 20px 50px 20px;
+    max-width:200px;
+    width:100%;
+}
+.countworkouts{background-color:rgb(44, 69, 150); color:rgb(220, 227, 241);}
+.averageDifficulty{background-color: rgb(240, 122, 12); color:rgb(255, 251, 247);}
 
-input{ display:block;}
+.about strong {
+    margin-top:20px;
+    display:block;
+    text-align:center;
+}
+
+form {
+    max-width:500px;
+    width:100%;
+    padding:20px;
+    margin-top:15px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+}
+input[type=text], textarea{ 
+    width:100%;
+    padding:5px;
+    margin-bottom:10px;
+    border:1px solid rgb(179, 179, 179);
+    border-radius:4px;
+}
+input, textarea{margin-top:6px;}
+
+input[type=time], input[type=number]{
+    margin-bottom:10px;
+    padding:5px;
+    border:1px solid rgb(179, 179, 179);
+    border-radius:4px;
+}
 
 input[type=submit]{
     background-color:white;
     padding:8px;
     border:1px solid grey;
+    margin-top:10px;
+    margin-bottom:15px;
+    border-radius:4px;
 }
 
 form span {
     color:red;
     padding-bottom:10px;
+}
+
+#weekbox{width:100%; padding-top:10px;}
+
+#weekbox label {
+    display:inline-block;
+    padding:4px 8px 8px 8px;
+    margin-right:10px;
+    border:1px solid rgb(196, 196, 196);
+    border-radius:15px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+#weekbox input[type=radio]{
+    appearance: none;
+	width: 18px;
+	height: 18px;
+    vertical-align:text-bottom;
+	border: 2px solid rgb(112, 125, 199);
+	border-radius: 50%;
+	background-clip: content-box;
+	padding: 3px;
+    
+}
+
+
+#weekbox input[type="radio"]:hover{
+    background-color: rgb(112, 125, 199);
+}
+
+#weekbox input[type="radio"]:checked {
+	background-color: rgb(112, 125, 199);
+}
+
+footer {
+    margin-top:50px;
 }

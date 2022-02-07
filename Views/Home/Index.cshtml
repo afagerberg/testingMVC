@@ -3,14 +3,140 @@
     ViewData["Title"] = "Startsida";
 }
 
-<h2>Kurser jag läst</h2>
-<p>@ViewBag.newcourse</p>
-<p>@ViewBag.text</p>
-<ul>
-    @if(Model != null){
-        @foreach(var workout in Model){
-            <li><strong>@workout.workoutName</strong>@workout.time</li>
-        }
-    }
-</ul>
+<h2>Mitt träningsschema</h2>
+<p class="schedMessage">@ViewBag.newcourse</p>
+<p class="schedMessage">@ViewBag.text</p>
+<p class="schedMessage">@ViewBag.empty</p>
+
+<div class="schedule">
+    <div class="scheduleday">
+        <h3>Måndag</h3>
+        
+        <ul>
+            @if(Model != null){
+
+                var objects = Model.OrderBy(workout => workout.time);
+   
+                @foreach(var workout in objects){
+
+                    @if(workout.dayOfWeek == "Måndag"){
+                    
+                        <li><strong> @workout.workoutName</strong> kl @workout.time</li>
+                    }
+                }
+            }
+
+        </ul>
+    </div>
+
+    <div class="scheduleday">
+        <h3>Tisdag</h3>
+        <ul>
+            @if(Model != null){
+
+                var objects = Model.OrderBy(workout => workout.time);
+   
+                @foreach(var workout in objects){
+
+                    @if(workout.dayOfWeek == "Tisdag"){
+                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                    }
+                }
+            }
+
+        </ul>
+    </div>
+
+    <div class="scheduleday">
+        <h3>Onsdag</h3>
+        <ul>
+            @if(Model != null){
+                
+                var objects = Model.OrderBy(workout => workout.time);
+   
+                @foreach(var workout in objects){
+
+                    @if(workout.dayOfWeek == "Onsdag"){
+                    
+                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                    }
+                }
+            }
+
+        </ul>
+    </div>
+
+    <div class="scheduleday">
+        <h3>Torsdag</h3>
+        <ul>
+            @if(Model != null){
+
+                var objects = Model.OrderBy(workout => workout.time);
+   
+                @foreach(var workout in objects){
+
+                    @if(workout.dayOfWeek == "Torsdag"){
+                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                    }
+                }
+            }
+
+        </ul>
+    </div>
+
+    <div class="scheduleday">
+        <h3>Fredag</h3>
+        <ul>
+            @if(Model != null){
+
+                var objects = Model.OrderBy(workout => workout.time);
+   
+                @foreach(var workout in objects){
+
+                    @if(workout.dayOfWeek == "Fredag"){
+                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                    }
+                }
+            }
+
+        </ul>
+    </div>
+
+    <div class="scheduleday">
+        <h3>Lördag</h3>
+        <ul>
+            @if(Model != null){
+
+                var objects = Model.OrderBy(workout => workout.time);
+   
+                @foreach(var workout in objects){
+
+                    @if(workout.dayOfWeek == "Lördag"){
+                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                    }
+                }
+            }
+
+        </ul>
+    </div>
+
+    <div class="scheduleday">
+        <h3>Söndag</h3>
+        <ul>
+            @if(Model != null){
+
+                var objects = Model.OrderBy(workout => workout.time);
+   
+                @foreach(var workout in objects){
+
+                    @if(workout.dayOfWeek == "Söndag"){
+                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                    }
+                }
+            }
+
+
+        </ul>
+    </div>
+</div>
 
