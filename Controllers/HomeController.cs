@@ -8,19 +8,13 @@ namespace MVC123.Controllers {
     public class HomeController : Controller {
 
         //Start
+        [HttpGet("/")]
         public IActionResult Index(){
             var JsonStr = System.IO.File.ReadAllText("schedule.json");
             var JsonObj = JsonConvert.DeserializeObject<List<ScheduleModel>>(JsonStr);
 
             string? s1 = HttpContext.Session.GetString("test1");
             string? add1 = HttpContext.Session.GetString("test2");
-
-            string? empty = "Ditt träningsschema är tomt - Passa på att lägg in några träningstillfällen";
-            if(JsonObj != null) {
-                if(JsonObj.Count == 0){
-                ViewBag.empty = empty;
-            }
-            }
             
             if(add1 == null){
                 ViewBag.text = s1;
@@ -39,6 +33,7 @@ namespace MVC123.Controllers {
         }
 
         //Om
+        [HttpGet("/om")]
         public IActionResult About(){
 
             var JsonStr = System.IO.File.ReadAllText("schedule.json");
@@ -48,6 +43,7 @@ namespace MVC123.Controllers {
         }
 
         //Kurser
+        [HttpGet("/laggtillkurs")]
         public IActionResult AddWorkout(){
 
             var JsonStr = System.IO.File.ReadAllText("schedule.json");
@@ -61,7 +57,8 @@ namespace MVC123.Controllers {
             
         }
 
-        [HttpPost] //Vid post metod används denna modell
+        
+        [HttpPost("/laggtillkurs")] //Vid post metod används denna modell
         public IActionResult AddWorkout(ScheduleModel model){
             
             string? s4 = HttpContext.Session.GetString("test1");
@@ -93,7 +90,7 @@ namespace MVC123.Controllers {
 
                ModelState.Clear();
                
-               return Redirect("Index"); 
+               return Redirect("/"); 
               
             }
             

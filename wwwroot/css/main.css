@@ -1,25 +1,55 @@
 *{margin:0; padding:0; box-sizing: border-box;}
 
+::-webkit-scrollbar {
+    width: 9px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background: rgb(137, 149, 221);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(89, 97, 143);
+  }
+
 body {
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 a { text-decoration: none;}
 
-h1{ font-size:1.2em; display:inline-block;}
+h1{ font-size:1.2em; display:inline-block; color: rgb(44, 69, 150);}
 
 h2{ font-size:1.6em; color: rgb(240, 122, 12);}
-header {padding:10px;}
-header p { display:inline-block;}
 
-nav ul { margin-top:10px;display:flex; gap:15px;}
+p, li, a {
+    font-size:1em;
+}
+header {
+    padding:10px; 
+    position:sticky;
+    top:0;
+    background-color:rgba(255, 255, 255, 0.87);
+}
+header p { display:inline-block; color: rgb(44, 69, 150);}
+
+
+nav ul { margin-top:10px;display:flex; gap:15px; }
 nav ul li a { 
     display:block; 
     padding:5px 8px 5px 8px; 
     background-color:rgb(240, 122, 12);
     border-radius:3px;
     color:white;
+    transition: all 0.2s;
 }
-.container {margin-top:20px;}
+
+nav ul li a:hover {
+    background-color:rgb(44, 69, 150);
+}
+.container {margin-top:40px;}
 main {
     max-width:920px;
     margin:0 auto;
@@ -32,12 +62,12 @@ main {
     color:rgb(162, 167, 196);
 }
 .schedule{
-    position: relative;
     display:flex;
+    max-width:860px;
     width:100%;
     gap:15px;
     flex-direction: row;
-    justify-content: left;
+    justify-content:left;
     flex-wrap:wrap;
     background-color:rgb(194, 197, 218);
     padding:20px;
@@ -48,7 +78,8 @@ main {
     color:white;
 }
 .scheduleday {
-    width:200px;
+    flex:20%;
+    min-width:200px;
     height:200px;
     overflow:auto;
     padding:5px;
@@ -68,6 +99,7 @@ ul {list-style:none;}
 li strong{display:block;}
 .about {
     display:flex;
+    flex-wrap:wrap;
     gap:10px;
     margin-top:20px;
 }
@@ -86,41 +118,51 @@ li strong{display:block;}
 }
 
 form {
-    max-width:500px;
     width:100%;
     padding:20px;
+    margin:0 auto;
     margin-top:15px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.14);
     border-radius: 10px;
 }
-input[type=text], textarea{ 
+input[type=text]{ 
+    max-width:500px;
     width:100%;
-    padding:5px;
+    padding:8px;
     margin-bottom:10px;
     border:1px solid rgb(179, 179, 179);
     border-radius:4px;
 }
-input, textarea{margin-top:6px;}
+input{margin-top:6px;}
 
 input[type=time], input[type=number]{
     margin-bottom:10px;
-    padding:5px;
+    padding:8px;
     border:1px solid rgb(179, 179, 179);
     border-radius:4px;
 }
 
 input[type=submit]{
-    background-color:white;
+    background-color:rgb(44, 69, 150);
     padding:8px;
-    border:1px solid grey;
     margin-top:10px;
     margin-bottom:15px;
+    border:0;
     border-radius:4px;
+    color:rgb(238, 239, 248);
+    font-weight: bold;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+
+input[type=submit]:hover {
+    background-color:rgb(112, 125, 199);
 }
 
 form span {
+    display:inline-block;
     color:red;
-    padding-bottom:10px;
+    margin-bottom:15px;
 }
 
 #weekbox{width:100%; padding-top:10px;}
@@ -156,6 +198,47 @@ form span {
 	background-color: rgb(112, 125, 199);
 }
 
-footer {
-    margin-top:50px;
+footer {   
+    padding:40px 10px 10px 10px;
+    margin:0 auto;
+    max-width:920px;
+}
+
+footer p {
+    padding:20px;
+    width:100%;
+    border-top:2px solid rgb(202, 206, 226);
+    color: rgb(112, 125, 199);
+    font-weight: bold;
+}
+@media screen and (min-width:480px){
+
+    header{ padding:15px;}
+
+    .headcontent {
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    
+
+    .scheduleday {
+        max-width:300px;
+    }
+}
+
+@media screen and (min-width:920px){
+
+
+    .schedule{
+        display:flex;
+        max-width:920px;
+        width:100%;
+    }
+    
+    .scheduleday {
+        flex:20%;
+        max-width:200px;
+    }
+
 }

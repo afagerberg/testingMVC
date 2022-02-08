@@ -1,7 +1,7 @@
 @model MVC123.Models.ScheduleModel
 
 @{
-    ViewData["Title"] = "Lägg till träningstillfälle";
+    ViewData["Title"] = "WOS - Lägg till träningstillfälle";
 }
 
 <h2>Lägg till ett träningstillfälle</h2>
@@ -42,7 +42,7 @@
     <span asp-validation-for="time"></span>
     <br>
     <label asp-for="degreeDifficulty"></label><br>
-    <input type="number" asp-for="degreeDifficulty" />
+    <input type="number" asp-for="degreeDifficulty" value="0"/>
     <span asp-validation-for="degreeDifficulty"></span> 
     <br>
     <input type="submit" value="Lägg till">

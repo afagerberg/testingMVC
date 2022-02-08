@@ -16,9 +16,8 @@ namespace MVC123.Models {
         [Display(Name ="Välj vilken tid på dygnet")]
         public string? time { get; set; }
 
-        [Required (ErrorMessage ="Du måste fylla i en svårighetsgrad")]
+        [Range(1,5, ErrorMessage ="Du måste fylla i en svårighetsgrad mellan 1-5")]
         [Display(Name ="Svårighets grad, välj från 1 till 5")]
-        [Range(1,5, ErrorMessage ="Du måste fylla i en svårighetsgrad")]
         public int degreeDifficulty { get; set; }
     
 

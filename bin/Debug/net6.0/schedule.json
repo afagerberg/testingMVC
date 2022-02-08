@@ -6,27 +6,27 @@
     "degreeDifficulty": 3
   },
   {
-    "workoutName": "Squats",
-    "dayOfWeek": "Måndag",
-    "time": "18:50",
-    "degreeDifficulty": 2
-  },
-  {
-    "workoutName": "Zumba",
-    "dayOfWeek": "Torsdag",
-    "time": "14:00",
-    "degreeDifficulty": 4
-  },
-  {
     "workoutName": "Intervall träning",
-    "dayOfWeek": "Måndag",
-    "time": "10:00",
+    "dayOfWeek": "Onsdag",
+    "time": "17:05",
     "degreeDifficulty": 2
   },
   {
-    "workoutName": "Zumba",
-    "dayOfWeek": "Tisdag",
-    "time": "08:00",
+    "workoutName": "banan",
+    "dayOfWeek": "Torsdag",
+    "time": "19:10",
+    "degreeDifficulty": 2
+  },
+  {
+    "workoutName": "Vals",
+    "dayOfWeek": "Söndag",
+    "time": "18:00",
+    "degreeDifficulty": 2
+  },
+  {
+    "workoutName": "Vals",
+    "dayOfWeek": "Söndag",
+    "time": "18:00",
     "degreeDifficulty": 2
   }
 ]

@@ -1,6 +1,6 @@
 @model List<MVC123.Models.ScheduleModel>
 @{
-    ViewData["Title"] = "Om sida";
+    ViewData["Title"] = "WOS - Om min träning";
 }
 
 <h2>Om min träning</h2>
@@ -8,7 +8,10 @@
 <div class="about">
     @if(Model != null) {
         <p class="countworkouts">Antal träningstillfällen i mitt schema: <strong> @Model.Count träningstillfällen</strong> </p>
-        <p class="averageDifficulty">Medelvärdet för min svårighetsgrad:<strong> @Model.Average(workout => workout.degreeDifficulty) av 5</strong></p>
+
+        var average = Model.Average(workout => workout.degreeDifficulty);
+        
+        <p class="averageDifficulty">Medelvärdet för min svårighetsgrad:<strong> @Math.Round(average,1) av 5</strong></p>
     }else{
         <p class="countworkouts">Antal träningstillfällen i mitt schema:<strong> 0 träningstillfällen</strong> </p>
         <p class="averageDifficulty">Medelvärdet för min svårighetsgrad ligger på:<strong> 0 av 5</strong></p>

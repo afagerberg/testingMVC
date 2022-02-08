@@ -1,12 +1,11 @@
 @model List<MVC123.Models.ScheduleModel>
 @{
-    ViewData["Title"] = "Startsida";
+    ViewData["Title"] = "WOS - Startsida";
 }
 
 <h2>Mitt träningsschema</h2>
 <p class="schedMessage">@ViewBag.newcourse</p>
 <p class="schedMessage">@ViewBag.text</p>
-<p class="schedMessage">@ViewBag.empty</p>
 
 <div class="schedule">
     <div class="scheduleday">
@@ -21,7 +20,7 @@
 
                     @if(workout.dayOfWeek == "Måndag"){
                     
-                        <li><strong> @workout.workoutName</strong> kl @workout.time</li>
+                        <li><strong> @workout.workoutName</strong> kl @workout.time<br> @workout.degreeDifficulty av 5 i svårighetsgrad</li>
                     }
                 }
             }
@@ -39,7 +38,7 @@
                 @foreach(var workout in objects){
 
                     @if(workout.dayOfWeek == "Tisdag"){
-                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                        <li><strong>@workout.workoutName</strong> kl @workout.time <br> @workout.degreeDifficulty av 5 i svårighetsgrad</li>
                     }
                 }
             }
@@ -58,7 +57,7 @@
 
                     @if(workout.dayOfWeek == "Onsdag"){
                     
-                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                        <li><strong>@workout.workoutName</strong> kl @workout.time <br> @workout.degreeDifficulty av 5 i svårighetsgrad</li>
                     }
                 }
             }
@@ -76,7 +75,7 @@
                 @foreach(var workout in objects){
 
                     @if(workout.dayOfWeek == "Torsdag"){
-                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                        <li><strong>@workout.workoutName</strong> kl @workout.time <br> @workout.degreeDifficulty av 5 i svårighetsgrad</li>
                     }
                 }
             }
@@ -94,7 +93,7 @@
                 @foreach(var workout in objects){
 
                     @if(workout.dayOfWeek == "Fredag"){
-                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                        <li><strong>@workout.workoutName</strong> kl @workout.time <br> @workout.degreeDifficulty av 5 i svårighetsgrad</li>
                     }
                 }
             }
@@ -112,7 +111,7 @@
                 @foreach(var workout in objects){
 
                     @if(workout.dayOfWeek == "Lördag"){
-                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                        <li><strong>@workout.workoutName</strong> kl @workout.time <br> @workout.degreeDifficulty av 5 i svårighetsgrad</li>
                     }
                 }
             }
@@ -130,7 +129,7 @@
                 @foreach(var workout in objects){
 
                     @if(workout.dayOfWeek == "Söndag"){
-                        <li><strong>@workout.workoutName</strong> kl @workout.time</li>
+                        <li><strong>@workout.workoutName</strong> kl @workout.time <br> @workout.degreeDifficulty av 5 i svårighetsgrad</li>
                     }
                 }
             }
